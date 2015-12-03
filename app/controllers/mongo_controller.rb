@@ -4,7 +4,7 @@ class MongoController < ApplicationController
     end
     
     def index
-         @iden = params[:dataset]
+         @_id = params[:dataset]
          @result = Employee.where(_id: "#{@_id}")
          render :partial => 'index'
     end
