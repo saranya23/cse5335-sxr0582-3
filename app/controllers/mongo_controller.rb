@@ -5,9 +5,10 @@ class MongoController < ApplicationController
     
     def index
          #@_id = params[:dataset]
-         @result = Employees.find()
+         @result = Employee.find()
+         puts @result
          #console.log("Check1")
          #console.log(@result)
-         render :partial => 'index'
+         #render :partial => 'index'
     end
 end

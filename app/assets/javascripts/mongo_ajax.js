@@ -5,7 +5,7 @@ $(document).ready(function(){
 			type: 'GET',
 			url: "mongo/index",
 			dataType: 'json',
-			data: $.param({dataset: 373292}),
+			//: $.param({dataset: 373292}),
 			//contentType: 'application/json',
 			
 			success: function(data){
