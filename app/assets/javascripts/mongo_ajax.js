@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("#btn1").one("click",function(){
 	    $.ajax({
 			type: 'GET',
-			url: "mongo/index",
+			url: "mongo/proj3",
 			dataType: 'json',
 			//: $.param({dataset: 373292}),
 			//contentType: 'application/json',
