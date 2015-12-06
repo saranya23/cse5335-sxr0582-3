@@ -1,0 +1,19 @@
+
+
+<% @result.each_with_index do |element| %>
+
+
+<tr>
+    <td><%=element["_id"]%></td>
+    <td><%=element["emp_id"]%></td>
+    <td><%= element["emp_name"]%></td>
+    <td><%= element["dept_name"]%></td>
+    <td><%= element["job_code"]%></td>
+    <td><%= element["job_title"]%></td>
+    <td><%= element["grade"]%></td>
+    <td><%= element["annual_salary"]%></td>
+</tr>
+<%end %>
+
+
+

@@ -1,6 +1,6 @@
-table,td,th
+table
 { 
-    border-collapse: collapse ;padding: 5px; font-style:italic;
+    border-collapse: collapse ; table-layout:fixed;
     
 }
 
@@ -8,10 +8,15 @@ td,th
 {
      border: 2px solid #DC143C  ;
      background-color:#FFE4C4;
+     font-style:italic;
+     padding: 5px;
+     width: 100px;
+     overflow:hidden;
 }
 th 
 {
     background-color: #FF6347;
+    width: 100px;
     
 }
 
