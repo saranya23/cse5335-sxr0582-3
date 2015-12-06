@@ -3,13 +3,11 @@ $( document ).ready(function() {
     var id=1;
   
     $("#btn1").one("click",function(){ 
-    
-      $("#btn1").hide(); //  hides the button after it has been clicked
       
-     //$("#table").append("<table><tr><th>"+"Seq_No"+"</th>"+"<th>"+"Emp_ID"+"</th>"+"<th>"+"Emp_Name"+"</th>"+"<th>"+"Dept_Name"+"</th>"+"<th>"+"Job_Code"+"</th>"+"<th>"+"Job_Title"+"</th>"+"<th>"+"Grade"+"</th>"+"<th>"+"Annual_Salary"+"</th></tr>");
-     //$("#table").append("<table><tr><th>Seq_No</th><th>Emp_ID</th><th>Emp_Name</th><th>Dept_Name</th><th>Job_Code</th><th>Job_Title</th><th>Grade</th><th>Annual_Salary</th></tr>");
-    var ajaxreq = setInterval(function() 
-    {        // on button click Ajax call is made
+      $("#btn1").hide(); //  hides the button after it has been clicked
+      $("p").replaceWith("Data is loaded at 0.5 seconds interval and displays only 20 records at a time");
+      var ajaxreq = setInterval(function() 
+      {        // on button click Ajax call is made
       $.ajax(
       { 
         type: "GET",                
@@ -36,7 +34,7 @@ $( document ).ready(function() {
    // }//, 'slow'); // Adds Animation to the displaying data records ,opacity : '0'}, 3500
     //       //$("table").hide();
     id=id+1
-     if(id==100)         // Check if 125 calls are completed
+     if(id==101)         // Check if 125 calls are completed
       {
         clearInterval(ajaxreq);     // stop reptitive ajax calls
       }
