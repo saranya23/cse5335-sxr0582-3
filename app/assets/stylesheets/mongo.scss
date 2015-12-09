@@ -1,25 +1,31 @@
 table
 { 
-    border-collapse: collapse ; table-layout:fixed;
+    border-collapse: collapse ; //table-layout:fixed;
     
 }
 
-td,th 
+td 
 {
      border: 2px solid #DC143C  ;
      background-color:#FFE4C4;
      font-style:italic;
      padding: 5px;
-     width: 100px;
-     overflow:hidden;
+     
+     //width: 100px;
+     //overflow:hidden;
 }
-th 
+tr,th 
 {
     background-color: #FF6347;
-    width: 100px;
+    border: 2px solid #DC143C;
+   // width: 100px;
+    font-style:italic;
+    padding: 5px;
+    //overflow:hidden;
     
 }
 
+tr{opacity: 0.5;}
 h1
 {
     color:#CC0066;

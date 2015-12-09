@@ -1,8 +1,11 @@
+
+
 <!DOCTYPE html >
 <html>
  <head>
    <title> Project1 </title>
    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
  </head>
 <body>
    <h1>Employee Details</h1>
@@ -10,8 +13,21 @@
    <p>Click the button to get the employee details</p>
    <button id="btn1"  >Click me!</button>
    <br/>
-   <div id = "table">
+   <div id = "container" style = "width:100%">
+   <table id="personTable"  style="width:wrap_content">
+       <tr id="title" style="visibility:hidden" opacity=1>
+            <th>Seq_No</th>
+            <th>Emp_ID</th>
+            <th>Emp_Name</th>
+            <th>Dept_Name</th>
+            <th>Job_Code</th>
+            <th>Job_Title</th>
+            <th>Grade</th>
+            <th>Annual_Salary</th>
+        </tr>
+   </table> 
    </div>
+   
 </body>
 </html>
 

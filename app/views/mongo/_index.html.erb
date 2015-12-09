@@ -3,7 +3,7 @@
 <% @result.each_with_index do |element| %>
 
 
-<tr>
+<tr id= <%=element["_id"]%>>
     <td><%=element["_id"]%></td>
     <td><%=element["emp_id"]%></td>
     <td><%= element["emp_name"]%></td>
