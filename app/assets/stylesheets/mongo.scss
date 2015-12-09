@@ -1,7 +1,6 @@
 table
 { 
-    border-collapse: collapse ; //table-layout:fixed;
-    
+    border-collapse: collapse ; 
 }
 
 td 
@@ -11,21 +10,18 @@ td
      font-style:italic;
      padding: 5px;
      
-     //width: 100px;
-     //overflow:hidden;
 }
+
 tr,th 
 {
     background-color: #FF6347;
     border: 2px solid #DC143C;
-   // width: 100px;
     font-style:italic;
     padding: 5px;
-    //overflow:hidden;
-    
 }
 
 tr{opacity: 0.5;}
+
 h1
 {
     color:#CC0066;
